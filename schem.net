@@ -1,0 +1,17 @@
+* C:\Users\Admin\Documents\LTspiceXVII\schem.asc
+V1 N001 0 4.1v
+V2 N002 0 5v
+R1 N002 N001 10k
+R2 N001 N005 6.8k
+R3 N003 N006 3.3k
+XU1 N001 N003 N002 0 N004 LT1001
+D1 N003 N005 D
+D2 N003 N006 D
+D3 0 N003 D
+D4 N004 0 D
+.model D D
+.lib C:\Users\Admin\AppData\Local\LTspice\lib\cmp\standard.dio
+.tran 20
+.lib LTC.lib
+.backanno
+.end
