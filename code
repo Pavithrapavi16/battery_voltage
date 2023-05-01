@@ -1,0 +1,13 @@
+import os
+
+# Path to LTSpice executable
+ltspice_path = "C:/Program Files/LTC/LTspiceXVII/XVIIx64.exe"
+
+# Path to LTSpice schematic file
+schematic_path = "C:/Users/Username/Documents/LTSpice/schematic.asc"
+
+# Command to run LTSpice simulation in batch mode
+ltspice_command = f'"{ltspice_path}" -b "{schematic_path}"'
+
+# Launch LTSpice simulation
+os.system(ltspice_command)
